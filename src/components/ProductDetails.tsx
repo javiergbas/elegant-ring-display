@@ -64,7 +64,10 @@ const ProductDetails = () => {
       
       {/* Size Selection */}
       <div className="mb-8">
-        <h2 className="uppercase tracking-widest text-xs font-medium mb-4">Size</h2>
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="uppercase tracking-widest text-xs font-medium">Size</h2>
+          <button className="text-xs uppercase tracking-widest underline">Get your size</button>
+        </div>
         <div className="flex flex-wrap gap-2">
           {[4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9].map((size) => (
             <button
